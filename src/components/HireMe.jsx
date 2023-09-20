@@ -12,35 +12,37 @@ const imageVariants = {
   },
 }
 
-const HireMe = () => {
+const HireMe = ({ customClass }) => {
   return (
     <>
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className='fixed right-0.5 top-0.5 z-50 flex items-center justify-center overflow-hidden rounded-full opacity-100 shadow-sm backdrop-blur-sm sm:bottom-3 sm:left-3'
+        className={`${customClass} z-50 flex h-fit w-fit items-center justify-center overflow-hidden rounded-full opacity-100 shadow-sm backdrop-blur-sm`}
       >
         {/* <div className='relative flex h-auto w-44 items-center justify-center dark:bg-dark dark:text-light'> */}
         <div className='relative flex items-center justify-center dark:text-light'>
           <motion.div
-            className='h-[85px] w-[85px] sm:h-[180px] sm:w-[180px]'
+            className='h-[85px] w-[85px] md:h-[130px] md:w-[130px] lg:h-[180px] lg:w-[180px]'
             variants={imageVariants}
             animate='animate'
           >
-            <CircularText className='-translate-x-0.5 -translate-y-0.5 fill-dark object-contain dark:fill-white sm:-translate-x-1 sm:-translate-y-1' />
+            <CircularText className='-translate-x-0.5 -translate-y-0.5 fill-dark object-contain dark:fill-white md:-translate-x-1 md:-translate-y-1' />
           </motion.div>
 
           <a
             className='
-              absolute left-1/2 top-1/2 flex
-              h-12
-              w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-dark
-              text-[0.65rem] font-bold text-light
-             shadow-2xl 
-              hover:border-dark
-            hover:bg-light hover:text-dark dark:bg-light
-            dark:px-0.5 dark:text-dark
+              border-3 absolute left-1/2 top-1/2
+              flex
+              h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full
+              border bg-dark
+             text-[0.65rem] font-bold
+              text-light shadow-2xl
+            hover:border-dark hover:bg-light hover:text-dark
+             dark:bg-light dark:text-dark
             dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
-              sm:h-24 sm:w-24 sm:text-lg'
+              md:h-[4.5rem] md:w-[4.5rem]
+              md:text-[1rem] lg:h-24 lg:w-24
+               lg:text-lg'
             href='mailto:siegfried.bozza@yahoo.com'
             target='_blank'
           >

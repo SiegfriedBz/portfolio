@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 
 const logoVariants = {
   hover: {
@@ -21,19 +21,22 @@ const logoVariants = {
   },
 }
 
-const MotionLink = motion(Link)
+const Logo = ({ setMobileMenuIsOpen }) => {
+  const router = useRouter()
 
-const Logo = () => {
   return (
     <div className='flex items-center justify-center'>
-      <MotionLink
+      <motion.button
         variants={logoVariants}
         whileHover='hover'
         className='flex h-16 w-16 items-center justify-center rounded-full border border-solid border-transparent bg-dark text-2xl font-bold text-light dark:border-light'
-        href='/'
+        onClick={() => {
+          router.push('/')
+          setMobileMenuIsOpen(false)
+        }}
       >
         SB
-      </MotionLink>
+      </motion.button>
     </div>
   )
 }

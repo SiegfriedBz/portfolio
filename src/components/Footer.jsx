@@ -2,11 +2,11 @@ import SocialLinks from './SocialLinks'
 
 const Footer = () => {
   return (
-    <footer className='m-auto flex w-11/12 items-center justify-between gap-4 border-t-[1px] border-solid border-black px-8 py-8 font-medium dark:border-light sm:px-12 md:px-24 lg:px-32'>
+    <footer className='m-auto flex flex-col-reverse items-center justify-between gap-4 border-t-[1px] border-solid border-black px-8 py-8 font-medium dark:border-light sm:w-11/12 sm:flex-row sm:px-12 md:px-24 lg:px-32'>
       <span>&copy;{new Date().getFullYear()} All Rights Reserved</span>
       <div className='flex items-center'>
         Build with
-        <span className='text-primary dark:text-primaryDark sm:px-1 sm:text-2xl'>
+        <span className='px-1 text-primary dark:text-primaryDark sm:text-2xl'>
           &hearts;
         </span>{' '}
         by&nbsp;
@@ -18,7 +18,7 @@ const Footer = () => {
           Siegfried
         </a>
       </div>
-      <div className='flex flex-col items-center gap-4 sm:flex-row'>
+      <div className='flex items-center gap-8 sm:gap-4'>
         <SocialLinks />
       </div>
     </footer>

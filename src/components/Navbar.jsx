@@ -94,7 +94,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className='absolute left-1/2 z-50 -translate-x-1/4'>
-          <Logo />
+          <Logo setMobileMenuIsOpen={setMobileMenuIsOpen} />
         </div>
       </header>
 
@@ -156,7 +156,7 @@ const Navbar = () => {
               title='Travel'
             />
           </nav>
-          <div className='mt-5 flex w-full justify-center gap-8'>
+          <div className='mt-5 flex w-full items-center justify-center gap-8'>
             <SocialLinks modal={true} />
           </div>
         </div>

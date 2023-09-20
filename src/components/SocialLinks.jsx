@@ -16,7 +16,10 @@ const SocialLinks = ({ modal = false }) => {
         target='_blank'
         href='https://github.com/SiegfriedBz'
       >
-        <FontAwesomeIcon icon={faLinkedinIn} className={`w-7 text-blue-600`} />
+        <FontAwesomeIcon
+          icon={faLinkedinIn}
+          className={`h-8 w-8 text-blue-600`}
+        />
       </MotionLink>
       <MotionLink
         variants={linkVariants}
@@ -26,7 +29,7 @@ const SocialLinks = ({ modal = false }) => {
       >
         <FontAwesomeIcon
           icon={faGithubAlt}
-          className={`w-7 
+          className={`h-8 w-8 
           ${modal ? 'text-light dark:text-dark' : 'text-dark dark:text-light'}
           `}
         />
