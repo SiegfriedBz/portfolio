@@ -75,11 +75,11 @@ const Navbar = () => {
         </nav>
 
         {/* desktop: toggle Theme Icon & SocialLinks */}
-        <nav className='flex w-1/3 items-center lg:gap-4'>
+        <nav className='flex w-1/2 items-center lg:gap-4'>
           <button
             onClick={toggleThemeColor}
             className={`${
-              isHomePage ? 'ms-[0.585rem] md:ms-auto' : 'ms-auto'
+              isHomePage ? 'ms-[33%] md:ms-auto' : 'ms-auto'
             } z-50 lg:me-5`}
           >
             {isClient ? (
@@ -98,7 +98,7 @@ const Navbar = () => {
         </nav>
 
         {/* Logo */}
-        <div className='absolute left-1/2 z-50 -translate-x-1/4'>
+        <div className='absolute left-1/2 z-50 -translate-x-1/2'>
           <Logo setMobileMenuIsOpen={setMobileMenuIsOpen} />
         </div>
       </header>
