@@ -51,7 +51,7 @@ const Navbar = () => {
         >
           <span
             className={`${
-              mobileMenuIsOpen ? 'translate-y-[0.715rem] rotate-45' : 'rotate-0'
+              mobileMenuIsOpen ? 'translate-y-[0.7rem] rotate-45' : 'rotate-0'
             } block h-0.5 w-8 rounded-sm bg-dark dark:bg-light`}
           ></span>
           <span
@@ -61,9 +61,7 @@ const Navbar = () => {
           ></span>
           <span
             className={`${
-              mobileMenuIsOpen
-                ? '-translate-y-[0.715rem] -rotate-45'
-                : 'rotate-0'
+              mobileMenuIsOpen ? '-translate-y-[0.7rem] -rotate-45' : 'rotate-0'
             } block h-0.5 w-8 rounded-sm bg-dark dark:bg-light`}
           ></span>
         </motion.button>
