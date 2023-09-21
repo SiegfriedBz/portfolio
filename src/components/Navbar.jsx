@@ -37,8 +37,6 @@ const Navbar = () => {
     setIsClient(true)
   }, [])
 
-  console.log('mobileMenuIsOpen', mobileMenuIsOpen)
-
   return (
     <>
       <header className='relative flex w-full items-center justify-between px-8 py-8 font-medium sm:px-12 md:px-24 lg:px-32'>
