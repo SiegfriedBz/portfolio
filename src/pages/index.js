@@ -7,7 +7,6 @@ import {
   faCloudArrowDown,
   faPaperPlane,
 } from '@fortawesome/free-solid-svg-icons'
-import profilePic from '../../public/images/developer-pic-1.png'
 import { AnimatedText } from '@/components/AnimatedText'
 import HireMe from '@/components/HireMe'
 
@@ -40,7 +39,7 @@ export default function Home() {
                   right: 50,
                   bottom: 50,
                 }}
-                src='https://res.cloudinary.com/dygpd9pkl/image/upload/v1695273383/portfolio/og_social_next_portfolio.png'
+                src='https://res.cloudinary.com/dygpd9pkl/image/upload/v1695273383/portfolio/next_portfolio_image_01.png'
                 className='h-auto w-full'
                 width='1080'
                 height='1080'
@@ -54,11 +53,10 @@ export default function Home() {
                 text='Turning Vision Into Reality With Code And Design.'
                 className='!text-center text-4xl font-bold sm:text-5xl md:text-6xl lg:!text-left lg:text-7xl'
               />
-              <p className='my-5 text-center text-xl lg:text-justify'>
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+              <p className='my-5 text-start text-xl'>
+                As a full-stack developer, I am dedicated to turning ideas into
+                innovative web applications. Explore my latest projects,
+                showcasing my skills in React.js, Next.js and web development.
               </p>
               <div className='mx-auto flex w-full items-center justify-center font-semibold md:justify-start'>
                 <a
