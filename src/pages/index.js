@@ -11,14 +11,22 @@ import profilePic from '../../public/images/developer-pic-1.png'
 import { AnimatedText } from '@/components/AnimatedText'
 import HireMe from '@/components/HireMe'
 
+const meta = {
+  title: 'Siegfried Bozza | Next.JS Portfolio | Home',
+  description:
+    'As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.',
+}
+
 const MotionImage = motion(Image)
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio | Home Page</title>
-        <meta name='description' content='Portfolio' />
+        <title>{meta.title}</title>
+        <meta content={meta.description} name='description' />
+        <meta property='og:description' content={meta.description} />
+        <meta property='og:title' content={meta.title} />
       </Head>
       <main className='relative flex min-h-screen w-full text-dark dark:text-light'>
         <PageLayout className=' pt-8 sm:pt-16 lg:pt-0'>
@@ -32,8 +40,10 @@ export default function Home() {
                   right: 50,
                   bottom: 50,
                 }}
-                src={profilePic}
+                src='https://res.cloudinary.com/dygpd9pkl/image/upload/v1695273383/portfolio/og_social_next_portfolio.png'
                 className='h-auto w-full'
+                width='1080'
+                height='1080'
                 alt='Web developer profile'
                 priority
                 sizes='(max-width: 768px) 100vw, 50vw'
@@ -52,8 +62,8 @@ export default function Home() {
               </p>
               <div className='mx-auto flex w-full items-center justify-center font-semibold md:justify-start'>
                 <a
-                  className='flex min-w-[30%] rounded-2xl border border-solid border-dark bg-dark px-8 py-4 text-light transition duration-500 ease-in-out hover:border-dark hover:bg-light hover:text-dark
-                  dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light'
+                  className='flex min-w-[30%] rounded-2xl border border-solid border-dark bg-dark px-4 py-2 text-light transition duration-500 ease-in-out hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark
+                  dark:hover:border-light dark:hover:bg-dark dark:hover:text-light sm:px-8 sm:py-4'
                   href='./CV_siegfried_bozza.pdf'
                   download={true}
                 >
@@ -64,7 +74,7 @@ export default function Home() {
                         className='w-5 md:w-6'
                       />
                     </span>
-                    <span className='px-2'>Resume</span>
+                    <span className='ps-2'>Resume</span>
                   </span>
                 </a>
 
@@ -88,7 +98,7 @@ export default function Home() {
             </div>
           </div>
           <HireMe customClass='hidden md:inline-block md:fixed md:bottom-3 md:left-3' />
-          <HireMe customClass='md:hidden absolute -top-20 right-1' />
+          <HireMe customClass='md:hidden absolute -top-[4.75rem] right-2' />
         </PageLayout>
       </main>
     </>

@@ -29,7 +29,7 @@ const Logo = ({ setMobileMenuIsOpen }) => {
       <motion.button
         variants={logoVariants}
         whileHover='hover'
-        className='flex h-16 w-16 items-center justify-center rounded-full border border-solid border-transparent bg-dark text-2xl font-bold text-light dark:border-light'
+        className='flex h-16 w-16 items-center justify-center rounded-full border border-solid border-transparent bg-dark text-2xl font-bold text-light outline-none focus:!border-none active:!border-none dark:border-light'
         onClick={() => {
           router.push('/')
           setMobileMenuIsOpen(false)
