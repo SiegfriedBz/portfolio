@@ -5,12 +5,20 @@ import PageLayout from '@/components/layouts/PageLayout'
 import Head from 'next/head'
 import screenerImg from '../../../public/images/crypto-screener-cover-image.jpg'
 
+const meta = {
+  title: 'Siegfried Bozza | Next.JS Portfolio | Projects Page',
+  description:
+    'As a full-stack web developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my skills in React.js, Next.js and web development.',
+}
+
 const Projects = () => {
   return (
     <>
       <Head>
-        <title>Portfolio | Projects Page</title>
-        <meta name='description' content='Projects' />
+        <title>{meta.title}</title>
+        <meta content={meta.description} name='description' />
+        <meta property='og:description' content={meta.description} />
+        <meta property='og:title' content={meta.title} />
       </Head>
       <main className='mb-16 flex w-full flex-col items-center justify-center'>
         <PageLayout className='pt-16'>

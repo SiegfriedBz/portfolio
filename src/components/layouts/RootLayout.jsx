@@ -8,9 +8,12 @@ const RootLayout = (props) => {
   const router = useRouter()
 
   const meta = {
-    canonicalUrl: `https://siegfried-bozza-next-portfolio.vercel.app/${router.asPath}`,
+    canonicalUrl: `https://siegfried-bozza-next-portfolio.vercel.app${router.asPath}`,
     ...customMeta,
   }
+
+  console.log('meta.canonicalUrl', meta.canonicalUrl)
+  console.log('meta.socialUmageUrl', meta.socialUmageUrl)
 
   return (
     <>

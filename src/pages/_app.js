@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
         className={`${montserrat.variable} min-h-screen w-full bg-light font-mont dark:bg-dark dark:text-light`}
       >
         <RootLayout
-          socialUmageUrl={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/v1695276302/portfolio/og_social_next_portfolio.png`}
+          socialUmageUrl={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/v1695276302/portfolio/og_social_next_portfolio`}
         >
           <Component {...pageProps} />
         </RootLayout>

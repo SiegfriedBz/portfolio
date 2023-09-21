@@ -7,12 +7,20 @@ import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 
+const meta = {
+  title: 'Siegfried Bozza | Next.JS Portfolio | About Page',
+  description:
+    'As a full-stack web developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my skills in React.js, Next.js and web development.',
+}
+
 const About = () => {
   return (
     <>
       <Head>
-        <title>Portfolio | About Page</title>
-        <meta name='description' content='About Me' />
+        <title>{meta.title}</title>
+        <meta content={meta.description} name='description' />
+        <meta property='og:description' content={meta.description} />
+        <meta property='og:title' content={meta.title} />
       </Head>
       <main className='flex w-full flex-col items-center justify-center'>
         <PageLayout className='pt-16'>
