@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import { Montserrat } from 'next/font/google'
 import Head from 'next/head'
-import RootLayout from '@/components/layouts/rootLayout'
+import RootLayout from '../components/layouts/RootLayout'
 import generateSocialImage from '../utils/generateSocialImage'
 
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-mont' })
