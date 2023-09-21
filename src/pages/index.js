@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import { motion } from 'framer-motion'
 import PageLayout from '@/components/layouts/PageLayout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -16,8 +15,6 @@ const meta = {
     'As a full-stack web developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my skills in React.js, Next.js and web development.',
 }
 
-const MotionImage = motion(Image)
-
 export default function Home() {
   return (
     <>
@@ -31,14 +28,7 @@ export default function Home() {
         <PageLayout className=' pt-8 sm:pt-16 lg:pt-0'>
           <div className='flex flex-col items-center justify-between lg:flex-row'>
             <div className='w-full md:hidden lg:inline-block lg:w-1/2'>
-              <MotionImage
-                drag={true}
-                dragConstraints={{
-                  top: -50,
-                  left: -50,
-                  right: 50,
-                  bottom: 50,
-                }}
+              <Image
                 src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/v1695273383/portfolio/next_portfolio_image_01.png`}
                 className='h-auto w-full'
                 width='1080'
