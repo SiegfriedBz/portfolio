@@ -6,8 +6,8 @@ const ModalBackDrop = ({ mobileMenuIsOpen, setMobileMenuIsOpen, children }) => {
     <motion.div
       id='backdrop'
       className={`${
-        mobileMenuIsOpen ? 'z-20' : '-z-1'
-      } fixed left-0 top-0 flex h-full w-full translate-y-12 items-center justify-center backdrop-blur-md lg:hidden`}
+        mobileMenuIsOpen ? 'z-40' : '-z-1'
+      } fixed left-0 top-0 flex h-screen w-full items-center justify-center backdrop-blur-md lg:hidden`}
       initial={{ opacity: 0 }}
       animate={mobileMenuIsOpen ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.3 }}
