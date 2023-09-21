@@ -13,7 +13,7 @@ import HireMe from '@/components/HireMe'
 const meta = {
   title: 'Siegfried Bozza | Next.JS Portfolio | Home',
   description:
-    'As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.',
+    'As a full-stack web developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my skills in React.js, Next.js and web development.',
 }
 
 const MotionImage = motion(Image)
@@ -39,7 +39,7 @@ export default function Home() {
                   right: 50,
                   bottom: 50,
                 }}
-                src='https://res.cloudinary.com/dygpd9pkl/image/upload/v1695273383/portfolio/next_portfolio_image_01.png'
+                src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/v1695273383/portfolio/next_portfolio_image_01.png`}
                 className='h-auto w-full'
                 width='1080'
                 height='1080'
@@ -53,7 +53,7 @@ export default function Home() {
                 text='Turning Vision Into Reality With Code And Design.'
                 className='!text-center text-4xl font-bold sm:text-5xl md:text-6xl lg:!text-left lg:text-7xl'
               />
-              <p className='my-5 text-start text-xl'>
+              <p className='my-5 text-center text-xl sm:text-start'>
                 As a full-stack developer, I am dedicated to turning ideas into
                 innovative web applications. Explore my latest projects,
                 showcasing my skills in React.js, Next.js and web development.

@@ -23,7 +23,7 @@ const RootLayout = (props) => {
           property='og:site_name'
           content='Siegfried Bozza | Next.JS Portfolio'
         />
-        <meta property='og:image' content={meta.imageUrl} />
+        <meta property='og:image' content={meta.socialUmageUrl} />
       </Head>
       <Navbar />
       {children}
