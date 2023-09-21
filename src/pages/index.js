@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import { motion } from 'framer-motion'
 import PageLayout from '@/components/layouts/PageLayout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -8,6 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { AnimatedText } from '@/components/AnimatedText'
 import HireMe from '@/components/HireMe'
+import { useAppContext } from '@/context/AppContext'
 
 const meta = {
   title: 'Siegfried Bozza | Next.JS Portfolio | Home',
@@ -15,7 +17,22 @@ const meta = {
     'As a full-stack web developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my skills in React.js, Next.js and web development.',
 }
 
+const hireMeDivVariants = {
+  hidden: {
+    opacity: 0,
+    zIndex: -1,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1.75,
+    },
+  },
+}
+
 export default function Home() {
+  const { footerIsInView } = useAppContext()
+
   return (
     <>
       <Head>
@@ -93,9 +110,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <HireMe customClass='hidden md:inline-block md:fixed md:bottom-3 md:left-3' />
           <HireMe customClass='md:hidden absolute -top-[4.55rem] right-[0.58rem]' />
         </PageLayout>
+        <motion.div
+          variants={hireMeDivVariants}
+          initial='visible'
+          animate={footerIsInView ? 'hidden' : 'visible'}
+        >
+          <HireMe customClass='hidden md:inline-block md:fixed md:bottom-3 md:left-3' />
+        </motion.div>
       </main>
     </>
   )

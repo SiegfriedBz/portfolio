@@ -2,6 +2,7 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { AppContextProvider } from '@/context/AppContext'
 
 const RootLayout = (props) => {
   const { children, ...customMeta } = props
@@ -26,8 +27,10 @@ const RootLayout = (props) => {
         <meta property='og:image' content={meta.socialUmageUrl} />
       </Head>
       <Navbar />
-      {children}
-      <Footer />
+      <AppContextProvider>
+        {children}
+        <Footer />
+      </AppContextProvider>
     </>
   )
 }
