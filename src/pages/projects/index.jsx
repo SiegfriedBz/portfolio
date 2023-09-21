@@ -3,7 +3,7 @@ import FeaturedProject from '@/components/FeaturedProject'
 import Project from '@/components/Project'
 import PageLayout from '@/components/layouts/PageLayout'
 import Head from 'next/head'
-import screenerImg from '../../../public/images/crypto-screener-cover-image.jpg'
+// import screenerImg from '../../../public/images/crypto-screener-cover-image.jpg'
 
 const meta = {
   title: 'Siegfried Bozza | Next.JS Portfolio | Projects Page',
@@ -34,7 +34,7 @@ const Projects = () => {
                 summary='A feature-rich Crypto Screener App using React, Tailwind, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency.'
-                img={screenerImg}
+                // img={screenerImg}
                 link='https://aquaman-surf-bali.vercel.app/'
                 gitHub=''
               />
@@ -68,7 +68,7 @@ const Projects = () => {
                 summary='A feature-rich Crypto Screener App using React, Tailwind, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency.'
-                img={screenerImg}
+                // img={screenerImg}
                 link='https://aquaman-surf-bali.vercel.app/'
                 gitHub=''
                 reverse
@@ -103,7 +103,7 @@ const Projects = () => {
                 summary='A feature-rich Crypto Screener App using React, Tailwind, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency.'
-                img={screenerImg}
+                // img={screenerImg}
                 link='https://aquaman-surf-bali.vercel.app/'
                 gitHub=''
               />
