@@ -29,17 +29,19 @@ const Navbar = () => {
   const [themeColor, setThemeColor] = useThemeMode()
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
 
-  const toggleThemeColor = () => {
-    setThemeColor(themeColor === 'light' ? 'dark' : 'light')
-  }
-
   useEffect(() => {
     setIsClient(true)
   }, [])
 
+  const toggleThemeColor = () => {
+    setThemeColor(themeColor === 'light' ? 'dark' : 'light')
+  }
+
+  const isHomePage = router.asPath === '/'
+
   return (
     <>
-      <header className='relative flex w-full items-center justify-between px-8 py-8 font-medium sm:px-12 md:px-24 lg:px-32'>
+      <header className='relative flex w-full items-center justify-between px-8 py-8 font-medium sm:px-12 md:px-24 lg:px-12 xl:px-32'>
         {/* mobile: burger */}
         <motion.button
           onClick={() => setMobileMenuIsOpen((prev) => !prev)}
@@ -75,8 +77,13 @@ const Navbar = () => {
         </nav>
 
         {/* desktop: toggle Theme Icon & SocialLinks */}
-        <nav className='hidden items-center gap-4 lg:flex'>
-          <button onClick={toggleThemeColor} className='me-5'>
+        <nav className='flex w-1/3 items-center lg:gap-4'>
+          <button
+            onClick={toggleThemeColor}
+            className={`${
+              isHomePage ? 'ms-[0.585rem] md:ms-auto' : 'ms-auto'
+            } z-50 lg:me-5`}
+          >
             {isClient ? (
               themeColor === 'light' ? (
                 <MoonIcon className='fill-dark dark:fill-light' />
@@ -87,7 +94,9 @@ const Navbar = () => {
               ''
             )}
           </button>
-          <SocialLinks />
+          <span className='hidden gap-4 lg:flex'>
+            <SocialLinks />
+          </span>
         </nav>
 
         {/* Logo */}
@@ -103,19 +112,6 @@ const Navbar = () => {
         className='z-50'
       >
         <div className='w-full py-5'>
-          <div className='flex w-full justify-start'>
-            <button onClick={toggleThemeColor}>
-              {isClient ? (
-                themeColor === 'light' ? (
-                  <MoonIcon className='bg-transparent fill-dark' />
-                ) : (
-                  <SunIcon className='bg-transparent fill-light' />
-                )
-              ) : (
-                ''
-              )}
-            </button>
-          </div>
           <nav className='flex flex-col items-center justify-center gap-1'>
             <CustomLink
               As={'button'}

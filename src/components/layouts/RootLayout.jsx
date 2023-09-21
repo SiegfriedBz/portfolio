@@ -12,9 +12,6 @@ const RootLayout = (props) => {
     ...customMeta,
   }
 
-  console.log('meta.canonicalUrl', meta.canonicalUrl)
-  console.log('meta.socialUmageUrl', meta.socialUmageUrl)
-
   return (
     <>
       <Head>

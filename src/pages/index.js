@@ -51,14 +51,14 @@ export default function Home() {
             <div className='flex w-full flex-col items-center justify-center md:w-full lg:w-1/2'>
               <AnimatedText
                 text='Turning Vision Into Reality With Code And Design.'
-                className='!text-center text-4xl font-bold sm:text-5xl md:text-6xl lg:!text-left lg:text-7xl'
+                className='!text-center text-4xl font-bold sm:text-5xl lg:!text-left lg:text-6xl'
               />
-              <p className='my-5 text-center text-xl sm:text-start'>
+              <p className='my-5 text-center text-xl lg:text-start'>
                 As a full-stack developer, I am dedicated to turning ideas into
                 innovative web applications. Explore my latest projects,
                 showcasing my skills in React.js, Next.js and web development.
               </p>
-              <div className='mx-auto flex w-full items-center justify-center font-semibold md:justify-start'>
+              <div className='mx-auto flex w-full items-center justify-center font-semibold lg:justify-start'>
                 <a
                   className='flex min-w-[30%] rounded-2xl border border-solid border-dark bg-dark px-4 py-2 text-light transition duration-500 ease-in-out hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark
                   dark:hover:border-light dark:hover:bg-dark dark:hover:text-light sm:px-8 sm:py-4'
@@ -82,21 +82,25 @@ export default function Home() {
                   href='mailto:siegfried.bozza@yahoo.com'
                   target='_blank'
                 >
-                  <span className='flex items-center text-lg sm:gap-3 sm:text-xl'>
+                  <span className='group relative flex items-center text-lg sm:text-xl'>
                     <FontAwesomeIcon
                       icon={faPaperPlane}
                       className='w-4 md:w-5'
                     />
-                    <span className='px-2 underline underline-offset-2'>
-                      Mail
-                    </span>
+                    <span className='ps-2'>Mail</span>
+                    <span
+                      className='ease absolute -bottom-0.5
+                        left-0 inline-block h-[1px] w-full
+                        bg-dark transition-[width] duration-300
+                        dark:bg-light xs:w-0 group-hover:xs:w-full'
+                    ></span>
                   </span>
                 </a>
               </div>
             </div>
           </div>
           <HireMe customClass='hidden md:inline-block md:fixed md:bottom-3 md:left-3' />
-          <HireMe customClass='md:hidden absolute -top-[4.75rem] right-2' />
+          <HireMe customClass='md:hidden absolute -top-[4.55rem] right-[0.58rem]' />
         </PageLayout>
       </main>
     </>
