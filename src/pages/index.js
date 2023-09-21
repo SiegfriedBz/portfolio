@@ -43,19 +43,23 @@ export default function Home() {
                 text='Turning Vision Into Reality With Code And Design.'
                 className='!text-center text-4xl font-bold sm:text-5xl lg:!text-left lg:text-6xl'
               />
-              <p className='my-5 text-center text-xl lg:text-start'>
+              <p className='sm:text-md my-5 text-center text-sm md:text-lg lg:text-start'>
                 As a full-stack developer, I am dedicated to turning ideas into
                 innovative web applications. Explore my latest projects,
                 showcasing my skills in React.js, Next.js and web development.
               </p>
-              <div className='mx-auto flex w-full items-center justify-center font-semibold lg:justify-start'>
+              <div className='flex w-full items-center justify-center font-semibold lg:justify-start'>
                 <a
-                  className='flex min-w-[30%] rounded-2xl border border-solid border-dark bg-dark px-4 py-2 text-light transition duration-500 ease-in-out hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark
-                  dark:hover:border-light dark:hover:bg-dark dark:hover:text-light sm:px-8 sm:py-4'
+                  className='flex min-w-[30%] rounded-2xl 
+                    border border-solid border-dark bg-dark px-3 py-2
+                    text-light
+                    transition duration-500 ease-in-out
+                    hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark
+                    dark:hover:border-light dark:hover:bg-dark dark:hover:text-light sm:px-6 sm:py-4'
                   href='./CV_siegfried_bozza.pdf'
                   download={true}
                 >
-                  <span className='flex items-center justify-center text-lg sm:text-xl'>
+                  <span className='flex w-full items-center justify-center text-base sm:text-lg md:text-xl'>
                     <span>
                       <FontAwesomeIcon
                         icon={faCloudArrowDown}
@@ -72,12 +76,12 @@ export default function Home() {
                   href='mailto:siegfried.bozza@yahoo.com'
                   target='_blank'
                 >
-                  <span className='group relative flex items-center text-lg sm:text-xl'>
+                  <span className='group relative flex items-center text-base sm:text-lg md:text-xl'>
                     <FontAwesomeIcon
                       icon={faPaperPlane}
                       className='w-4 md:w-5'
                     />
-                    <span className='ps-2'>Mail</span>
+                    <span className='ps-2'>Contact</span>
                     <span
                       className='ease absolute -bottom-0.5
                         left-0 inline-block h-[1px] w-full
