@@ -43,7 +43,7 @@ export default function Home() {
                 text='Turning Vision Into Reality With Code And Design.'
                 className='!text-center text-4xl font-bold sm:text-5xl lg:!text-left lg:text-6xl'
               />
-              <p className='sm:text-md my-5 text-center text-sm md:text-lg lg:text-start'>
+              <p className='my-5 py-1 text-center text-sm sm:py-0 sm:text-lg md:text-xl lg:text-start'>
                 As a full-stack developer, I am dedicated to turning ideas into
                 innovative web applications. Explore my latest projects,
                 showcasing my skills in React.js, Next.js and web development.
