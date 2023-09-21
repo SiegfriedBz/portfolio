@@ -21,10 +21,22 @@ module.exports = {
         primaryDark: '#58E6D9', // 80,230,217
       },
       backgroundImage: {
-        circularLight:
+        circularLightLg:
           'repeating-radial-gradient(#020617 2px, #f5f5f5 5px, #f5f5f5 100px);',
-        circularDark:
+        circularDarkLg:
           'repeating-radial-gradient(#f5f5f5 2px, #020617 5px, #020617 100px);',
+        circularLightMd:
+          'repeating-radial-gradient(#020617 2px, #f5f5f5 5px, #f5f5f5 80px);',
+        circularDarkMd:
+          'repeating-radial-gradient(#f5f5f5 2px, #020617 5px, #020617 80px);',
+        circularLightSm:
+          'repeating-radial-gradient(#020617 2px,#f5f5f5 5px,#f5f5f5 60px)',
+        circularDarkSm:
+          'repeating-radial-gradient(#f5f5f5 2px,#020617 8px,#020617 60px)',
+        circularLight:
+          'repeating-radial-gradient(#020617 2px,#f5f5f5 5px,#f5f5f5 40px)',
+        circularDark:
+          'repeating-radial-gradient(#f5f5f5 2px,#020617 8px,#020617 40px)',
       },
     },
     screens: {

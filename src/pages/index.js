@@ -43,11 +43,11 @@ export default function Home() {
         <meta property='og:title' content={meta.title} />
       </Head>
       <main className='relative flex min-h-screen w-full text-dark dark:text-light'>
-        <PageLayout className=' pt-8 sm:pt-16 lg:pt-0'>
+        <PageLayout className='pt-8 sm:pt-16'>
           <div className='flex flex-col items-center justify-between lg:flex-row'>
             <div className='w-full md:hidden lg:inline-block lg:w-1/2'>
               <Image
-                src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/v1695273383/portfolio/next_portfolio_image_01.png`}
+                src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/v1695273383/portfolio/next_portfolio_image_01`}
                 className='h-auto w-full'
                 width='1080'
                 height='1080'
