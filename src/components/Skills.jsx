@@ -2,13 +2,15 @@ import { motion } from 'framer-motion'
 
 const Skills = () => {
   return (
-    <div className='mt-32 h-screen w-full md:mt-64'>
-      <h2 className='text-center text-6xl font-bold md:text-8xl'>Skills</h2>
+    <div className='mt-16 h-screen w-full sm:h-max md:mt-64'>
+      <h2 className='text-center text-4xl font-bold sm:text-6xl md:text-8xl'>
+        Skills
+      </h2>
       <div
-        className='sm:bg-circularLightSm sm:dark:bg-circularDarkSm
-          md:bg-circularLightMd md:dark:bg-circularDarkMd
-          lg:bg-circularLightLg lg:dark:bg-circularDarkLg
-          relative mx-auto
+        className='sm:bg-circularLightSm sm:dark:bg-circularDarkSm md:bg-circularLightMd
+          md:dark:bg-circularDarkMd lg:bg-circularLightLg
+          lg:dark:bg-circularDarkLg relative
+          mx-auto
           flex h-1/2 w-[85vw]
           items-center justify-center rounded-full bg-circularLight dark:bg-circularDark sm:h-[60vh] sm:w-full
           sm:p-4 md:h-[70vh] md:p-6 lg:h-[80vh] 

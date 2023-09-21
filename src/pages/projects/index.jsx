@@ -3,7 +3,6 @@ import FeaturedProject from '@/components/FeaturedProject'
 import Project from '@/components/Project'
 import PageLayout from '@/components/layouts/PageLayout'
 import Head from 'next/head'
-// import screenerImg from '../../../public/images/crypto-screener-cover-image.jpg'
 
 const meta = {
   title: 'Siegfried Bozza | Next.JS Portfolio | Projects Page',

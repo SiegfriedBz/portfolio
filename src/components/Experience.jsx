@@ -10,15 +10,17 @@ const Experience = () => {
   })
 
   return (
-    <div className='mt-64 w-full'>
-      <h2 className='mb-32 text-center text-8xl font-bold'>Experience</h2>
-      <div ref={ref} className='relative mx-auto w-[75%]'>
+    <div className='mt-16 w-full sm:mt-64'>
+      <h2 className='mb-8 text-center text-4xl font-bold sm:mb-16 sm:text-6xl md:text-8xl'>
+        Experience
+      </h2>
+      <div ref={ref} className='relative mx-auto w-full sm:w-[90%]'>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className='absolute left-9 top-0 h-full w-[2px] origin-top bg-dark dark:bg-light'
+          // className='absolute left-0 top-0 h-full w-[2px] origin-top bg-dark dark:bg-light sm:left-9'
         />
 
-        <ul className='flex w-full flex-col items-start justify-between'>
+        <ul ref={ref} className='relative mx-auto w-full sm:w-[90%]'>
           {jobList.map((work) => {
             return <JobDetails key={work.id} {...work} />
           })}
@@ -43,7 +45,7 @@ const JobDetails = ({
     <>
       <li
         ref={ref}
-        className='relative mx-auto my-8 flex w-[60%] flex-col items-center justify-between first:mt-8 last:mb-8'
+        className='relative mx-auto mb-8 flex w-[75%] flex-col items-center justify-between first:mt-4 last:mb-4 sm:w-[60%] sm:first:mt-8 sm:last:mb-8'
       >
         <ListIcon iconRef={ref} />
         <motion.div
@@ -51,19 +53,23 @@ const JobDetails = ({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className='w-full text-xl font-bold capitalize'>{position}</h3>
+          <h3 className='w-full text-lg font-bold capitalize sm:text-xl md:text-2xl'>
+            {position}
+          </h3>
           <a
             href={companyLink}
             target='_blank'
-            className='w-full text-lg font-bold capitalize text-primary dark:text-primaryDark'
+            className='w-full text-sm font-bold capitalize text-primary dark:text-primaryDark sm:text-lg'
           >
             {company} | {address}
           </a>
 
-          <span className='block font-medium capitalize text-dark/75 dark:text-light/75'>
+          <span className='block text-sm font-medium capitalize text-dark/75 dark:text-light/75 sm:text-lg'>
             {time}
           </span>
-          <p className='mt-1 w-full font-medium'>{details}</p>
+          <p className='mt-1 w-full text-justify text-sm font-medium sm:text-lg'>
+            {details}
+          </p>
         </motion.div>
       </li>
     </>
@@ -93,7 +99,7 @@ const jobList = [
   },
   {
     id: 3,
-    position: 'Private Teacher Mathematics & Physics',
+    position: 'Private Teacher Maths & Physics',
     company: 'Freelance',
     companyLink: '',
     time: '2020 - 2022',
@@ -103,7 +109,7 @@ const jobList = [
   },
   {
     id: 4,
-    position: 'Land Remediation Project Manager',
+    position: 'Project Manager Land Remediation',
     company: 'Kibag RE AG',
     companyLink: 'https://www.kibag.ch/',
     time: '2019 - 2020',
@@ -113,7 +119,7 @@ const jobList = [
   },
   {
     id: 5,
-    position: 'Land Remediation Engineer',
+    position: 'Engineer Land Remediation',
     company: 'Serpol SA',
     companyLink: '',
     time: '2014 - 2018',
@@ -123,7 +129,7 @@ const jobList = [
   },
   {
     id: 6,
-    position: 'Land Remediation Engineer',
+    position: 'Engineer Land Remediation',
     company: 'Suez SA',
     companyLink: '',
     time: '2012 - 2014',
@@ -133,7 +139,7 @@ const jobList = [
   },
   {
     id: 7,
-    position: 'Molecular Biology Research Associate',
+    position: 'Research Associate Molecular Biology',
     company: 'INSERM (french NIH)',
     companyLink: 'https://www.inserm.fr/en/home/',
     time: '2004 - 2009',
@@ -143,7 +149,7 @@ const jobList = [
   },
   {
     id: 8,
-    position: 'Molecular Biology Research Associate',
+    position: 'Research Associate Molecular Biology',
     company: 'University of British Columbia',
     companyLink: 'https://www.ubc.ca/',
     time: '2001 - 2003',

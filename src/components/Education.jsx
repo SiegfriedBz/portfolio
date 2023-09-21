@@ -10,15 +10,17 @@ const Education = () => {
   })
 
   return (
-    <div className='mt-64 w-full'>
-      <h2 className='mb-32 text-center text-8xl font-bold'>Education</h2>
-      <div ref={ref} className='relative mx-auto w-[75%]'>
+    <div className='mt-16 w-full sm:mt-64'>
+      <h2 className='mb-8 text-center text-4xl font-bold sm:mb-16 sm:text-6xl md:text-8xl'>
+        Education
+      </h2>
+      <div ref={ref} className='relative mx-auto w-full sm:w-[90%]'>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className='absolute left-9 top-0 h-full w-[2px] origin-top bg-dark dark:bg-light'
+          // className='absolute left-9 top-0 h-full w-[2px] origin-top bg-dark dark:bg-light'
         />
 
-        <ul className='flex w-full flex-col items-start justify-between'>
+        <ul ref={ref} className='relative mx-auto w-full sm:w-[90%]'>
           {degreeList.map((degree) => {
             return <DegreeDetails key={degree.id} {...degree} />
           })}
@@ -43,7 +45,7 @@ const DegreeDetails = ({
     <>
       <li
         ref={ref}
-        className='relative mx-auto my-8 flex w-[60%] flex-col items-center justify-between first:mt-8 last:mb-8'
+        className='relative mx-auto mb-8 flex w-[75%] flex-col items-center justify-between first:mt-4 last:mb-4 sm:w-[60%] sm:first:mt-8 sm:last:mb-8'
       >
         <ListIcon iconRef={ref} />
         <motion.div
@@ -51,20 +53,20 @@ const DegreeDetails = ({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className='text-2xl font-bold capitalize'>{degree}</h3>
-          <h3 className='font-lg text-dark/85 capitalize'>
-            <a
-              href={schoolLink}
-              target='_blank'
-              className='w-full text-lg font-bold capitalize text-primary dark:text-primaryDark'
-            >
-              {school} | {address}
-            </a>
+          <h3 className='w-full text-lg font-bold capitalize sm:text-xl md:text-2xl'>
+            {degree}
           </h3>
-          <span className='block font-medium capitalize text-dark/75 dark:text-light/75'>
+          <a
+            href={schoolLink}
+            target='_blank'
+            className='w-full text-sm font-bold capitalize text-primary dark:text-primaryDark sm:text-lg'
+          >
+            {school} | {address}
+          </a>
+          <span className='block text-sm font-medium capitalize text-dark/75 dark:text-light/75 sm:text-lg'>
             {time}
           </span>
-          <p className='mt-1 w-full font-medium'>{details}</p>
+          <p className='mt-1 w-full text-justify font-medium'>{details}</p>
         </motion.div>
       </li>
     </>
@@ -77,8 +79,8 @@ const degreeList = [
     degree: 'Full-Stack Web Development Bootcamp',
     school: 'Le Wagon',
     schoolLink: '',
-    time: 'Fall 2018',
-    address: 'Switzerland',
+    time: 'Summer 2022',
+    address: 'Zurich, Switzerland',
     details:
       'Assisted in teaching a course on computer programming, held office hours to help students with assignments, and graded exams and assignments.',
   },
@@ -97,27 +99,27 @@ const degreeList = [
     degree: 'Masters degree',
     school: 'Zigurat GBI',
     schoolLink: '',
-    time: '2022-Present',
+    time: '2021 - Current',
     address: 'Spain - Remote',
     details:
       "degreeed on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
   },
   {
     id: 4,
-    degree: 'MEng. Master of Engineering Civil/Environmental',
+    degree: 'M.Eng. Civil engineering',
     school: 'Ecole des Mines',
     schoolLink: '',
-    time: '2022-Present',
+    time: '2012',
     address: 'France',
     details:
       "degreeed on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
   },
   {
     id: 5,
-    degree: 'MSc. Master of Sciences Molecular Biology',
+    degree: 'M.Sc. Molecular Biology',
     school: 'UMII',
     schoolLink: '',
-    time: 'Fall 2018',
+    time: '2001',
     address: 'France',
     details:
       'Assisted in teaching a course on computer programming, held office hours to help students with assignments, and graded exams and assignments.',
