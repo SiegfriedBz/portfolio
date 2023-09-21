@@ -25,6 +25,7 @@ const hireMeDivVariants = {
   visible: {
     opacity: 1,
     transition: {
+      delay: 0.25,
       duration: 1.75,
     },
   },
