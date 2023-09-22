@@ -2,8 +2,11 @@ import { motion } from 'framer-motion'
 
 const ListIcon = ({ scrollYProgress }) => {
   return (
-    <figure className='absolute -left-[48px] -top-[22px] stroke-dark sm:-left-[24px] md:-left-[32px] lg:-left-[22px] xl:-left-[8x]'>
-      <svg width={75} height={75} viewBox='0 0 100 100'>
+    <figure className='sm:left[48px] absolute -left-[28px] -top-[14px] stroke-dark sm:-left-[24px] sm:-top-[22px] md:-left-[32px] lg:-left-[22px] xl:-left-[8x]'>
+      <svg
+        className='h-[55px] w-[55px] sm:h-[75px] sm:w-[75px]'
+        viewBox='0 0 100 100'
+      >
         <circle
           cx={75}
           cy={50}
