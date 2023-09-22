@@ -1,9 +1,6 @@
-import TransitionEffect from '../TransitionEffect'
-
 const PageLayout = ({ children, className = '' }) => {
   return (
     <>
-      <TransitionEffect />
       <div
         className={`inline-block h-full w-full bg-light p-8 dark:bg-dark dark:text-light sm:p-12 md:p-24 lg:p-12 xl:p-32 ${className}`}
       >
