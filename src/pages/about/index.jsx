@@ -1,10 +1,10 @@
 import { AnimatedText } from '@/components/AnimatedText'
+import Education from '@/components/about/Education'
+import Experience from '@/components/about/Experience'
+import Skills from '@/components/about/Skills'
 import PageLayout from '@/components/layouts/PageLayout'
 import Head from 'next/head'
 import Image from 'next/image'
-import Skills from '@/components/Skills'
-import Experience from '@/components/Experience'
-import Education from '@/components/Education'
 
 const meta = {
   title: 'Siegfried Bozza | Next.JS Portfolio | About Page',
