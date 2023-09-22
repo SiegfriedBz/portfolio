@@ -1,11 +1,6 @@
-import { motion, useScroll } from 'framer-motion'
+import { motion } from 'framer-motion'
 
-const ListIcon = ({ iconRef }) => {
-  const { scrollYProgress } = useScroll({
-    target: iconRef,
-    offset: ['center end', 'center center'],
-  })
-
+const ListIcon = ({ scrollYProgress }) => {
   return (
     <figure className='absolute -left-[48px] -top-[22px] stroke-dark sm:-left-[24px] md:-left-[32px] lg:-left-[22px] xl:-left-[8x]'>
       <svg width={75} height={75} viewBox='0 0 100 100'>
