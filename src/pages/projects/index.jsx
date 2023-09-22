@@ -77,7 +77,8 @@ const Projects = () => {
                 reverse
               />
             </div>
-            {/* <div className='col-span-12 md:col-span-6'>
+
+            <div className='col-span-1 xl:col-span-6'>
               <Project
                 stack='React.JS | Cypress'
                 title='XXXX'
@@ -89,7 +90,7 @@ const Projects = () => {
                 gitHub=''
               />
             </div>
-            <div className='col-span-12 md:col-span-6'>
+            <div className='col-span-1 xl:col-span-6'>
               <Project
                 stack='React.JS | TypeScript | Tailwind'
                 title='XXXX'
@@ -100,7 +101,8 @@ const Projects = () => {
                 link='https://aquaman-surf-bali.vercel.app/'
                 gitHub=''
               />
-            </div> */}
+            </div>
+
             <div className='col-span-1 xl:col-span-12'>
               <FeaturedProject
                 stack='Next.JS | Tailwind'
@@ -113,7 +115,8 @@ const Projects = () => {
                 gitHub=''
               />
             </div>
-            {/* <div className='col-span-12 md:col-span-6'>
+
+            <div className='col-span-1 xl:col-span-6'>
               <Project
                 stack='Next.JS | Tailwind'
                 title='Aquaman Bali'
@@ -125,7 +128,7 @@ const Projects = () => {
                 gitHub=''
               />
             </div>
-            <div className='col-span-12 md:col-span-6'>
+            <div className='col-span-1 xl:col-span-6'>
               <Project
                 stack='Next.JS | Dato-CMS | Tailwind'
                 title='Courses Landing Page'
@@ -136,7 +139,7 @@ const Projects = () => {
                 link='https://aquaman-surf-bali.vercel.app/'
                 gitHub=''
               />
-            </div> */}
+            </div>
           </div>
         </PageLayout>
       </main>
