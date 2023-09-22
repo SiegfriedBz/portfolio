@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const Skills = () => {
   return (
-    <div className='mt-16 h-screen w-full sm:h-max md:mt-64'>
+    <div className='mt-16 h-[360px] w-full sm:mt-32 sm:h-max lg:mt-48'>
       <h2 className='text-center text-4xl font-bold sm:text-6xl md:text-8xl'>
         Skills
       </h2>
@@ -10,14 +10,13 @@ const Skills = () => {
         className='sm:bg-circularLightSm sm:dark:bg-circularDarkSm md:bg-circularLightMd
           md:dark:bg-circularDarkMd lg:bg-circularLightLg
           lg:dark:bg-circularDarkLg relative
-          mx-auto
-          flex h-1/2 w-[85vw]
-          items-center justify-center rounded-full bg-circularLight dark:bg-circularDark sm:h-[60vh] sm:w-full
-          sm:p-4 md:h-[70vh] md:p-6 lg:h-[80vh] 
-           xl:h-screen
+          mx-auto flex h-5/6 w-[85vw] items-center justify-center 
+          rounded-full bg-circularLight dark:bg-circularDark sm:h-[70vh] sm:w-full
+          md:h-[70vh] lg:h-[80vh] 
+          xl:h-screen
         '
       >
-        <Skill name='React' y='-12em' />
+        <Skill name='React' y='-10.75em' />
 
         <Skill name='Next' x='-10em' y='-9.5em' />
         <Skill name='MERN' x='10em' y='-9.5em' />

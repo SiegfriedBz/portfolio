@@ -10,17 +10,17 @@ const Education = () => {
   })
 
   return (
-    <div className='mt-16 w-full sm:mt-64'>
+    <div className='mt-16 w-full sm:mt-32 lg:mt-48'>
       <h2 className='mb-8 text-center text-4xl font-bold sm:mb-16 sm:text-6xl md:text-8xl'>
         Education
       </h2>
-      <div ref={ref} className='relative mx-auto w-full sm:w-[90%]'>
+      <div ref={ref} className='relative mx-auto w-full lg:w-[90%] xl:w-[84%]'>
         <motion.div
           style={{ scaleY: scrollYProgress }}
           // className='absolute left-9 top-0 h-full w-[2px] origin-top bg-dark dark:bg-light'
         />
 
-        <ul ref={ref} className='relative mx-auto w-full sm:w-[90%]'>
+        <ul ref={ref} className='relative mx-auto w-full lg:w-[90%] xl:w-[84%]'>
           {degreeList.map((degree) => {
             return <DegreeDetails key={degree.id} {...degree} />
           })}
@@ -45,7 +45,7 @@ const DegreeDetails = ({
     <>
       <li
         ref={ref}
-        className='relative mx-auto mb-8 flex w-[75%] flex-col items-center justify-between first:mt-4 last:mb-4 sm:w-[60%] sm:first:mt-8 sm:last:mb-8'
+        className='relative mx-auto mb-8 flex w-full flex-col items-center justify-between pe-0 ps-[12%] first:mt-4 last:mb-4 sm:first:mt-8 sm:last:mb-8 lg:w-[80%]'
       >
         <ListIcon iconRef={ref} />
         <motion.div

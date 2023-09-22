@@ -7,7 +7,7 @@ const ListIcon = ({ iconRef }) => {
   })
 
   return (
-    <figure className='absolute -left-[82px] -top-[24px] stroke-dark'>
+    <figure className='absolute -left-[48px] -top-[22px] stroke-dark sm:-left-[24px] md:-left-[32px] lg:-left-[22px] xl:-left-[8x]'>
       <svg width={75} height={75} viewBox='0 0 100 100'>
         <circle
           cx={75}

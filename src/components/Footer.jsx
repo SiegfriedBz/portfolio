@@ -41,7 +41,7 @@ const Footer = () => {
             target='_blank'
             className='ps-2 underline underline-offset-2 hover:text-gray-700 dark:hover:text-gray-300'
           >
-            Siegfried
+            SiegfriedB
           </a>
         </div>
         <div className='hidden items-center gap-4 md:flex'>
