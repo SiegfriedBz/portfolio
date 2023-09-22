@@ -47,7 +47,7 @@ const Navbar = () => {
           onClick={() => setMobileMenuIsOpen((prev) => !prev)}
           variants={burgerVariants}
           animate={mobileMenuIsOpen ? 'open' : 'close'}
-          className='z-50 flex flex-col justify-center gap-2 lg:hidden'
+          className='z-30 flex flex-col justify-center gap-2 lg:hidden'
         >
           <span
             className={`${
@@ -80,7 +80,7 @@ const Navbar = () => {
             onClick={toggleThemeColor}
             className={`${
               isHomePage ? 'ms-[33%] md:ms-auto' : 'ms-auto'
-            } z-50 lg:me-5`}
+            } z-30 lg:me-5`}
           >
             {isClient ? (
               themeColor === 'light' ? (
@@ -98,7 +98,7 @@ const Navbar = () => {
         </nav>
 
         {/* Logo */}
-        <div className='absolute left-1/2 z-50 -translate-x-1/2'>
+        <div className='absolute left-1/2 z-30 -translate-x-1/2'>
           <Logo setMobileMenuIsOpen={setMobileMenuIsOpen} />
         </div>
       </header>
@@ -107,7 +107,7 @@ const Navbar = () => {
       <ModalBackDrop
         mobileMenuIsOpen={mobileMenuIsOpen}
         setMobileMenuIsOpen={setMobileMenuIsOpen}
-        className='z-50'
+        className='z-30'
       >
         <div className='w-full py-5'>
           <nav className='flex flex-col items-center justify-center gap-1'>

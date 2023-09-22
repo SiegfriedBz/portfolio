@@ -17,7 +17,7 @@ const HireMe = ({ customClass }) => {
     <>
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className={`${customClass} z-50 flex h-fit w-fit items-center justify-center overflow-hidden rounded-full opacity-100 shadow-sm backdrop-blur-sm`}
+        className={`${customClass} z-30 flex h-fit w-fit items-center justify-center overflow-hidden rounded-full opacity-100 shadow-sm backdrop-blur-sm`}
       >
         {/* <div className='relative flex h-auto w-44 items-center justify-center dark:bg-dark dark:text-light'> */}
         <div className='relative flex items-center justify-center dark:text-light'>
